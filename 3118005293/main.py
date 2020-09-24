@@ -46,8 +46,8 @@ class MinHashSimilarity(object):
             return m1.jaccard(m2)
 # 测试
 if __name__ == '__main__':
-    path1 = input("请出入第一个文件的绝对路径：")
-    path2 = input("请输入第二个文件的绝对路径：")
+    path1 = input("请输入原论文的绝对路径：")
+    path2 = input("请输入对比论文的绝对路径：")
     pa1 = os.path.dirname(path1)
     name1 = path1[len(pa1) + 1:]
     pa2 = os.path.dirname(path2)
